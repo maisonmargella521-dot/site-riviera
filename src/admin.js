@@ -1,0 +1,7 @@
+const getBookings = () => JSON.parse(localStorage.getItem('riviera_bookings') || '[]');
+const rows = document.querySelector('#rows');
+const empty = document.querySelector('#empty');
+function render(){const bookings=getBookings();empty.hidden=bookings.length>0;rows.innerHTML=bookings.map(b=>`<tr><td>${new Date(b.createdAt).toLocaleString('ru-RU')}</td><td>${escapeHtml(b.name)}</td><td>${escapeHtml(b.phone)}</td><td>${escapeHtml(b.room)}</td><td>${b.checkin}</td><td>${b.checkout}</td><td>${b.guests}</td><td>${b.total}</td></tr>`).join('')}
+function escapeHtml(value){const el=document.createElement('div');el.textContent=value;return el.innerHTML}
+document.querySelector('#export').addEventListener('click',()=>{const data=getBookings();const headers=['Дата заявки','Имя','Телефон','Размещение','Заезд','Выезд','Гости','Стоимость'];const values=data.map(b=>[new Date(b.createdAt).toLocaleString('ru-RU'),b.name,b.phone,b.room,b.checkin,b.checkout,b.guests,b.total]);const csv='\uFEFF'+[headers,...values].map(row=>row.map(cell=>`"${String(cell).replaceAll('"','""')}"`).join(';')).join('\n');const link=document.createElement('a');link.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'}));link.download='riviera-bookings.csv';link.click();URL.revokeObjectURL(link.href)});
+document.querySelector('#clear').addEventListener('click',()=>{if(confirm('Удалить все заявки?')){localStorage.removeItem('riviera_bookings');render()}});render();

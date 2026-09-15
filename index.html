@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="База отдыха «Волжская Ривьера» — тихий отдых у Волги, уютные номера и активные выходные." />
+  <title>Волжская Ривьера — база отдыха на Волге</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Prata&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="#top" aria-label="На главную"><span class="brand-mark">⌂</span><span>ВОЛЖСКАЯ<br><b>РИВЬЕРА</b></span></a>
+    <nav><a href="#about">О базе</a><a href="#rooms">Размещение</a><a href="#gallery">Галерея</a><a href="#contacts">Контакты</a></nav>
+    <a class="button button-small" href="#booking">Забронировать</a>
+    <button class="menu" aria-label="Открыть меню">☰</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-grain"></div>
+      <div class="hero-copy"><span class="eyebrow light">База отдыха на берегу Волги</span><h1>Волжская<br><em>Ривьера</em></h1><p>Место, где город остаётся далеко, а время наконец принадлежит вам.</p><a class="button" href="#rooms">Выбрать номер <span>↗</span></a></div>
+      <div class="hero-note"><span>53°10′ с. ш.</span><span>Тишина · Волга · Природа</span></div>
+    </section>
+
+    <section class="intro section" id="about">
+      <div class="section-label">01 — О нас</div>
+      <div class="intro-content"><p class="lead">Полное уединение<br>с природой, собственное<br>охотохозяйство и отдых<br><i>для всей семьи</i></p><div class="intro-grid"><div class="intro-photo photo cabin"></div><div class="intro-text"><p>Мы создали место, в котором не нужно выбирать между комфортом и настоящей природой.</p><p>Здесь утро начинается с тумана над водой, день — с приключений, а вечер — с разговоров у огня.</p><a href="#gallery" class="text-link">Узнать больше <span>→</span></a></div></div></div>
+    </section>
+
+    <section class="activities section">
+      <div class="section-label">02 — Впечатления</div><div class="activities-head"><h2>У каждого отдыха<br>свой <i>характер</i></h2><p>Выберите настроение на сегодня —<br>остальное мы уже подготовили.</p></div>
+      <div class="activity-cards">
+        <article class="activity active"><span>01</span><div><h3>Охота</h3><p>С опытным егерем по живописным угодьям</p></div></article>
+        <article class="activity fishing"><span>02</span><div><h3>Рыбалка</h3><p>Тихая вода и лучшие места на Волге</p></div></article>
+        <article class="activity beach"><span>03</span><div><h3>Пляж</h3><p>Песчаный берег для неспешного дня</p></div></article>
+        <article class="activity kids"><span>04</span><div><h3>Семьям</h3><p>Пространство и занятия для детей</p></div></article>
+      </div>
+    </section>
+
+    <section class="rooms section" id="rooms">
+      <div class="section-label">03 — Размещение</div><div class="rooms-head"><h2>Ваш дом<br><i>у большой воды</i></h2><p>В каждом номере — натуральные материалы,<br>тишина и всё необходимое для отдыха.</p></div>
+      <div class="room-list">
+        <article class="room" data-room="Дом «Сосны»" data-price="8900"><div class="room-img photo room1"><span>до 4 гостей</span></div><div class="room-info"><span class="room-no">01</span><h3>Дом «Сосны»</h3><p>Просторный дом с двумя спальнями, кухней и собственной террасой.</p><div class="room-bottom"><strong>от 8 900 ₽ <small>/ сутки</small></strong><button class="circle choose" aria-label="Выбрать дом Сосны">↗</button></div></div></article>
+        <article class="room" data-room="Номер «Рассвет»" data-price="5900"><div class="room-img photo room2"><span>до 2 гостей</span></div><div class="room-info"><span class="room-no">02</span><h3>Номер «Рассвет»</h3><p>Светлый номер с панорамным окном, большой кроватью и видом на лес.</p><div class="room-bottom"><strong>от 5 900 ₽ <small>/ сутки</small></strong><button class="circle choose" aria-label="Выбрать номер Рассвет">↗</button></div></div></article>
+        <article class="room" data-room="Дом «Берег»" data-price="11900"><div class="room-img photo room3"><span>до 6 гостей</span></div><div class="room-info"><span class="room-no">03</span><h3>Дом «Берег»</h3><p>Дом для большой семьи с гостиной, сауной и выходом прямо к воде.</p><div class="room-bottom"><strong>от 11 900 ₽ <small>/ сутки</small></strong><button class="circle choose" aria-label="Выбрать дом Берег">↗</button></div></div></article>
+      </div>
+    </section>
+
+    <section class="gallery section" id="gallery"><div class="section-label">04 — Галерея</div><div class="gallery-head"><h2>Жизнь<br><i>в своём ритме</i></h2><p>Листайте, чтобы почувствовать атмосферу</p></div><div class="gallery-grid"><div class="photo gallery1"></div><div class="photo gallery2"></div><div class="quote">«Здесь снова слышишь<br>собственные мысли»<span>— наши гости</span></div><div class="photo gallery3"></div></div></section>
+
+    <section class="booking section" id="booking">
+      <div class="booking-copy"><span class="section-label">05 — Бронирование</span><h2>Запланируйте<br><i>свой отдых</i></h2><p>Выберите номер и свободные даты. Мы сохраним заявку и свяжемся с вами для подтверждения.</p><div class="booking-perks"><span>✓ Бесплатная отмена за 7 дней</span><span>✓ Подтверждение менеджером</span></div></div>
+      <form id="bookingForm" class="booking-form">
+        <label>Выберите размещение<select id="room" required><option value="Дом «Сосны»" data-price="8900">Дом «Сосны» — 8 900 ₽</option><option value="Номер «Рассвет»" data-price="5900">Номер «Рассвет» — 5 900 ₽</option><option value="Дом «Берег»" data-price="11900">Дом «Берег» — 11 900 ₽</option></select></label>
+        <div class="form-row"><label>Дата заезда<input type="date" id="checkin" required></label><label>Дата выезда<input type="date" id="checkout" required></label></div>
+        <div class="form-row"><label>Ваше имя<input type="text" id="name" placeholder="Как к вам обращаться" required></label><label>Телефон<input type="tel" id="phone" placeholder="+7 999 000-00-00" required></label></div>
+        <label>Количество гостей<select id="guests"><option>1 гость</option><option>2 гостя</option><option>3 гостя</option><option>4 гостя</option><option>5 гостей</option><option>6 гостей</option></select></label>
+        <div class="booking-total"><span>Предварительная стоимость</span><strong id="total">—</strong></div><p class="form-error" id="formError" role="alert"></p>
+        <label class="consent"><input type="checkbox" required> <span>Я согласен на обработку персональных данных</span></label><button class="button submit" type="submit">Оставить заявку <span>→</span></button>
+      </form>
+    </section>
+
+    <section class="contacts" id="contacts"><div class="contact-card"><span class="section-label">06 — Контакты</span><h2>Ждём вас<br><i>на Волге</i></h2><a href="tel:+79999999999">+7 999 999-99-99</a><a href="mailto:hello@volga-riviera.ru">hello@volga-riviera.ru</a><p>Самарская область<br>Ежедневно, круглосуточно</p><a class="text-link" href="https://yandex.ru/maps/?text=Самарская%20область" target="_blank" rel="noreferrer">Построить маршрут ↗</a></div><iframe title="Карта расположения базы отдыха" src="https://yandex.ru/map-widget/v1/?ll=50.1334%2C53.1959&z=10&pt=50.1334%2C53.1959%2Cpm2rdm" allowfullscreen></iframe></section>
+  </main>
+  <footer><a class="brand" href="#top"><span class="brand-mark">⌂</span><span>ВОЛЖСКАЯ<br><b>РИВЬЕРА</b></span></a><p>© 2026 База отдыха «Волжская Ривьера»</p><div><a href="#about">О базе</a><a href="#rooms">Номера</a><a href="#booking">Бронирование</a></div></footer>
+  <div class="toast" id="toast"><button aria-label="Закрыть">×</button><span>Заявка принята</span><strong>Спасибо! Мы свяжемся с вами в ближайшее время.</strong></div>
+  <script type="module" src="/src/main.js"></script>
+</body></html>
